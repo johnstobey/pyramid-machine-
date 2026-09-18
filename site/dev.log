@@ -1,0 +1,684 @@
+▲ Next.js 16.3.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.1.66:3000
+✓ Ready in 372ms
+⚠ Warning: Next.js ignored package-lock.json in /Users/johntobey because it is outside the current Git repository (/Users/johntobey/.zcode/workspace/default/pyramid-machine-).
+ To use this directory, set `turbopack.root` in your Next.js config.
+
+✓ Running next.config.ts took 23ms
+
+⚠ Your project has `@next/font` installed as a dependency, please use the built-in `next/font` instead. The `@next/font` package will be removed in Next.js 14. You can migrate by running `npx --yes @next/codemod@latest built-in-next-font .`. Read more: https://nextjs.org/docs/messages/built-in-next-font
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+              <Home params={Promise} searchParams={Promise}>
+                <div className="min-h-scre...">
+                  <button>
+                  <aside className="fixed top-...">
+                    <div className="px-8 pt-8 ...">
+                      <div className="flex items...">
+                        <CorvusCorax size={48}>
+                          <svg width={48} height={48} viewBox="0 0 100 100" fill="none" xmlns="http://www..." ...>
+                            <defs>
+                            <path>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line
+                              x1={41.99999999999999}
+                              y1={32.143593539448986}
+                              x2={39.49999999999999}
++                             y2={27.813466520526795}
+-                             y2="27.81346652052679"
+                              stroke="var(--accent)"
+                              strokeWidth="0.6"
+                              opacity={0.25}
+                            >
+                            ...
+                        ...
+                    ...
+                  ...
+          ...
+        ...
+ 
+    at <unknown> (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:3243:25)
+    at runWithFiberInDEV (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:763:74)
+    at emitPendingHydrationWarnings (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:3242:13)
+    at completeWork (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:6714:102)
+    at runWithFiberInDEV (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:763:131)
+    at completeUnitOfWork (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:9454:23)
+    at performUnitOfWork (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:9389:28)
+    at workLoopConcurrentByScheduler (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:9383:58)
+    at renderRootConcurrent (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:9366:71)
+    at performWorkOnRoot (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:8893:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:10087:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2686:64) (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:3243:25)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+              <Home params={Promise} searchParams={Promise}>
+                <div className="min-h-scre...">
+                  <button>
+                  <aside className="fixed top-...">
+                    <div className="px-8 pt-8 ...">
+                      <div className="flex items...">
+                        <CorvusCorax size={48}>
+                          <svg width={48} height={48} viewBox="0 0 100 100" fill="none" xmlns="http://www..." ...>
+                            <defs>
+                            <path>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line
+                              x1={41.99999999999999}
+                              y1={32.143593539448986}
+                              x2={39.49999999999999}
++                             y2={27.813466520526795}
+-                             y2="27.81346652052679"
+                              stroke="var(--accent)"
+                              strokeWidth="0.6"
+                              opacity={0.25}
+                            >
+                            ...
+                        ...
+                    ...
+                  ...
+          ...
+        ...
+ 
+    at <unknown> (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:3243:25)
+    at runWithFiberInDEV (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:763:74)
+    at emitPendingHydrationWarnings (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:3242:13)
+    at completeWork (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:6714:102)
+    at runWithFiberInDEV (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:763:131)
+    at completeUnitOfWork (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:9454:23)
+    at performUnitOfWork (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:9389:28)
+    at workLoopConcurrentByScheduler (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:9383:58)
+    at renderRootConcurrent (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:9366:71)
+    at performWorkOnRoot (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:8893:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:10087:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2686:64) (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:3243:25)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+              <Home params={Promise} searchParams={Promise}>
+                <div className="min-h-scre...">
+                  <button>
+                  <aside className="fixed top-...">
+                    <div className="px-8 pt-8 ...">
+                      <div className="flex items...">
+                        <CorvusCorax size={48}>
+                          <svg width={48} height={48} viewBox="0 0 100 100" fill="none" xmlns="http://www..." ...>
+                            <defs>
+                            <path>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line
+                              x1={41.99999999999999}
+                              y1={32.143593539448986}
+                              x2={39.49999999999999}
++                             y2={27.813466520526795}
+-                             y2="27.81346652052679"
+                              stroke="var(--accent)"
+                              strokeWidth="0.6"
+                              opacity={0.25}
+                            >
+                            ...
+                        ...
+                    ...
+                  ...
+          ...
+        ...
+ 
+    at <unknown> (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:3243:25)
+    at runWithFiberInDEV (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:763:74)
+    at emitPendingHydrationWarnings (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:3242:13)
+    at completeWork (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:6714:102)
+    at runWithFiberInDEV (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:763:131)
+    at completeUnitOfWork (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:9454:23)
+    at performUnitOfWork (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:9389:28)
+    at workLoopConcurrentByScheduler (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:9383:58)
+    at renderRootConcurrent (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:9366:71)
+    at performWorkOnRoot (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:8893:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:10087:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2686:64) (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:3243:25)
+ GET / 200 in 1897ms (next.js: 1778ms, application-code: 119ms)
+ GET / 200 in 23ms (next.js: 3ms, application-code: 20ms)
+ GET / 200 in 114ms (next.js: 1.8ms, application-code: 112ms)
+ GET / 200 in 36ms (next.js: 2ms, application-code: 34ms)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+              <Home params={Promise} searchParams={Promise}>
+                <div className="min-h-scre...">
+                  <button>
+                  <aside className="fixed top-...">
+                    <div className="px-8 pt-8 ...">
+                      <div className="flex items...">
+                        <CorvusCorax size={48}>
+                          <svg width={48} height={48} viewBox="0 0 100 100" fill="none" xmlns="http://www..." ...>
+                            <defs>
+                            <path>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line
+                              x1={41.99999999999999}
+                              y1={32.143593539448986}
+                              x2={39.49999999999999}
++                             y2={27.813466520526795}
+-                             y2="27.81346652052679"
+                              stroke="var(--accent)"
+                              strokeWidth="0.6"
+                              opacity={0.25}
+                            >
+                            ...
+                        ...
+                    ...
+                  ...
+          ...
+        ...
+ 
+    at <unknown> (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:3243:25)
+    at runWithFiberInDEV (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:763:74)
+    at emitPendingHydrationWarnings (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:3242:13)
+    at completeWork (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:6714:102)
+    at runWithFiberInDEV (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:763:131)
+    at completeUnitOfWork (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:9454:23)
+    at performUnitOfWork (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:9389:28)
+    at workLoopConcurrentByScheduler (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:9383:58)
+    at renderRootConcurrent (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:9366:71)
+    at performWorkOnRoot (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:8893:150)
+    at performWorkOnRootViaSchedulerTask (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:10087:9)
+    at MessagePort.performWorkUntilDeadline (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/node_modules_next_dist_compiled_1amofcm._.js:2686:64) (file:///Users/johntobey/.zcode/workspace/default/pyramid-machine-/site/.next/dev/static/chunks/1q96_modules_next_dist_compiled_react-dom_cjs_react-dom-client_development_0mp0cp_.js:3243:25)
+ GET / 200 in 237ms (next.js: 205ms, application-code: 32ms)
+ GET / 200 in 54ms (next.js: 10ms, application-code: 45ms)
+ GET / 200 in 119ms (next.js: 22ms, application-code: 98ms)
+[browser] [RUM] ArmsEventBridge is not available, events dropped (<anonymous>:9:4511)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RedirectBoundary>
+      <RedirectErrorBoundary router={{...}}>
+        <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} segmentPath={[...]} ...>
+          <SegmentViewNode type="page" pagePath="page.tsx">
+            <SegmentTrieNode>
+            <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+              <Home params={Promise} searchParams={Promise}>
+                <div className="min-h-scre...">
+                  <button>
+                  <aside className="fixed top-...">
+                    <div className="px-8 pt-8 ...">
+                      <div className="flex items...">
+                        <CorvusCorax size={48}>
+                          <svg width={48} height={48} viewBox="0 0 100 100" fill="none" xmlns="http://www..." ...>
+                            <defs>
+                            <path>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line>
+                            <line
+                              x1={41.99999999999999}
+                              y1={32.143593539448986}
+                              x2={39.49999999999999}
++                             y2={27.813466520526795}
+-                             y2="27.81346652052679"
+                              stroke="var(--accent)"
+                              strokeWidth="0.6"
+                              opacity={0.25}
+                            >
+                            ...
+                        ...
+                    ...
+                  ...
+          ...
+        ...
+ 
+    at console.f [as error] (<anonymous>:3:17027) (<anonymous>:3:17027)
+[browser] [RUM] ArmsEventBridge is not available, events dropped (<anonymous>:9:4511)
+[browser] [RUM] ArmsEventBridge is not available, events dropped (<anonymous>:9:4511)
+[browser] [RUM] ArmsEventBridge is not available, events dropped (<anonymous>:9:4511)
+[browser] [RUM] ArmsEventBridge is not available, events dropped (<anonymous>:9:4511)
+[browser] [RUM] ArmsEventBridge is not available, events dropped (<anonymous>:9:4511)
+[browser] [RUM] ArmsEventBridge is not available, events dropped (<anonymous>:9:4511)
+✓ Compiled in 0ms
+[browser] ./src/components/sections/HomeSection.tsx:5:1
+Error: Export ChevronBand doesn't exist in target module
+  3 | ...beyData } from '@/lib/useTobeyData';
+  4 | ...orax from '@/components/CorvusCorax';
+> 5 | ...ndWindow, XCrossMark, ChevronBand, TessellationMark, TailFeatherModal } from '@/componen...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | ... from 'next/dynamic';
+  7 | ...
+  8 | ...piral = dynamic(() => import('@/components/MachineSpiral'), { ssr: false });
+
+The export ChevronBand was not found in module [project]/src/components/Ravenform.tsx [app-client] (ecmascript).
+Did you mean to import ChevronBorder?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Client Component Browser:
+    ./src/components/sections/HomeSection.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component] 
+    at console.f [as error] (<anonymous>:3:17027) (<anonymous>:3:17027)
+[browser] ./src/components/sections/HomeSection.tsx:5:1
+Error: Export DiamondWindow doesn't exist in target module
+  3 | ...beyData } from '@/lib/useTobeyData';
+  4 | ...orax from '@/components/CorvusCorax';
+> 5 | ...ndWindow, XCrossMark, ChevronBand, TessellationMark, TailFeatherModal } from '@/componen...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | ... from 'next/dynamic';
+  7 | ...
+  8 | ...piral = dynamic(() => import('@/components/MachineSpiral'), { ssr: false });
+
+The export DiamondWindow was not found in module [project]/src/components/Ravenform.tsx [app-client] (ecmascript).
+Did you mean to import DiamondLattice?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Client Component Browser:
+    ./src/components/sections/HomeSection.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component] 
+    at console.f [as error] (<anonymous>:3:17027) (<anonymous>:3:17027)
+[browser] ./src/components/sections/HomeSection.tsx:5:1
+Error: Export TailFeatherModal doesn't exist in target module
+  3 | ...beyData } from '@/lib/useTobeyData';
+  4 | ...orax from '@/components/CorvusCorax';
+> 5 | ...ndWindow, XCrossMark, ChevronBand, TessellationMark, TailFeatherModal } from '@/componen...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | ... from 'next/dynamic';
+  7 | ...
+  8 | ...piral = dynamic(() => import('@/components/MachineSpiral'), { ssr: false });
+
+The export TailFeatherModal was not found in module [project]/src/components/Ravenform.tsx [app-client] (ecmascript).
+Did you mean to import TailFeather?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Client Component Browser:
+    ./src/components/sections/HomeSection.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component] 
+    at console.f [as error] (<anonymous>:3:17027) (<anonymous>:3:17027)
+[browser] ./src/components/sections/HomeSection.tsx:5:1
+Error: Export TessellationMark doesn't exist in target module
+  3 | ...beyData } from '@/lib/useTobeyData';
+  4 | ...orax from '@/components/CorvusCorax';
+> 5 | ...ndWindow, XCrossMark, ChevronBand, TessellationMark, TailFeatherModal } from '@/componen...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | ... from 'next/dynamic';
+  7 | ...
+  8 | ...piral = dynamic(() => import('@/components/MachineSpiral'), { ssr: false });
+
+The export TessellationMark was not found in module [project]/src/components/Ravenform.tsx [app-client] (ecmascript).
+Did you mean to import TailFeather?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Client Component Browser:
+    ./src/components/sections/HomeSection.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component] 
+    at console.f [as error] (<anonymous>:3:17027) (<anonymous>:3:17027)
+[browser] ./src/components/sections/HomeSection.tsx:5:1
+Error: Export XCrossMark doesn't exist in target module
+  3 | ...beyData } from '@/lib/useTobeyData';
+  4 | ...orax from '@/components/CorvusCorax';
+> 5 | ...ndWindow, XCrossMark, ChevronBand, TessellationMark, TailFeatherModal } from '@/componen...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | ... from 'next/dynamic';
+  7 | ...
+  8 | ...piral = dynamic(() => import('@/components/MachineSpiral'), { ssr: false });
+
+The export XCrossMark was not found in module [project]/src/components/Ravenform.tsx [app-client] (ecmascript).
+Did you mean to import XCrossLattice?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Client Component Browser:
+    ./src/components/sections/HomeSection.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component] 
+    at console.f [as error] (<anonymous>:3:17027) (<anonymous>:3:17027)
+[browser] ./src/components/sections/HomeSection.tsx:5:1
+Error: Export ChevronBand doesn't exist in target module
+  3 | ...beyData } from '@/lib/useTobeyData';
+  4 | ...orax from '@/components/CorvusCorax';
+> 5 | ...ndWindow, XCrossMark, ChevronBand, TessellationMark, TailFeatherModal } from '@/componen...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | ... from 'next/dynamic';
+  7 | ...
+  8 | ...piral = dynamic(() => import('@/components/MachineSpiral'), { ssr: false });
+
+The export ChevronBand was not found in module [project]/src/components/Ravenform.tsx [app-client] (ecmascript).
+Did you mean to import ChevronBorder?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Client Component Browser:
+    ./src/components/sections/HomeSection.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component] 
+    at console.f [as error] (<anonymous>:3:17027) (<anonymous>:3:17027)
+[browser] ./src/components/sections/HomeSection.tsx:5:1
+Error: Export DiamondWindow doesn't exist in target module
+  3 | ...beyData } from '@/lib/useTobeyData';
+  4 | ...orax from '@/components/CorvusCorax';
+> 5 | ...ndWindow, XCrossMark, ChevronBand, TessellationMark, TailFeatherModal } from '@/componen...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | ... from 'next/dynamic';
+  7 | ...
+  8 | ...piral = dynamic(() => import('@/components/MachineSpiral'), { ssr: false });
+
+The export DiamondWindow was not found in module [project]/src/components/Ravenform.tsx [app-client] (ecmascript).
+Did you mean to import DiamondLattice?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Client Component Browser:
+    ./src/components/sections/HomeSection.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component] 
+    at console.f [as error] (<anonymous>:3:17027) (<anonymous>:3:17027)
+[browser] ./src/components/sections/HomeSection.tsx:5:1
+Error: Export TailFeatherModal doesn't exist in target module
+  3 | ...beyData } from '@/lib/useTobeyData';
+  4 | ...orax from '@/components/CorvusCorax';
+> 5 | ...ndWindow, XCrossMark, ChevronBand, TessellationMark, TailFeatherModal } from '@/componen...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | ... from 'next/dynamic';
+  7 | ...
+  8 | ...piral = dynamic(() => import('@/components/MachineSpiral'), { ssr: false });
+
+The export TailFeatherModal was not found in module [project]/src/components/Ravenform.tsx [app-client] (ecmascript).
+Did you mean to import TailFeather?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Client Component Browser:
+    ./src/components/sections/HomeSection.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component] 
+    at console.f [as error] (<anonymous>:3:17027) (<anonymous>:3:17027)
+[browser] ./src/components/sections/HomeSection.tsx:5:1
+Error: Export TessellationMark doesn't exist in target module
+  3 | ...beyData } from '@/lib/useTobeyData';
+  4 | ...orax from '@/components/CorvusCorax';
+> 5 | ...ndWindow, XCrossMark, ChevronBand, TessellationMark, TailFeatherModal } from '@/componen...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | ... from 'next/dynamic';
+  7 | ...
+  8 | ...piral = dynamic(() => import('@/components/MachineSpiral'), { ssr: false });
+
+The export TessellationMark was not found in module [project]/src/components/Ravenform.tsx [app-client] (ecmascript).
+Did you mean to import TailFeather?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Client Component Browser:
+    ./src/components/sections/HomeSection.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component] 
+    at console.f [as error] (<anonymous>:3:17027) (<anonymous>:3:17027)
+[browser] ./src/components/sections/HomeSection.tsx:5:1
+Error: Export XCrossMark doesn't exist in target module
+  3 | ...beyData } from '@/lib/useTobeyData';
+  4 | ...orax from '@/components/CorvusCorax';
+> 5 | ...ndWindow, XCrossMark, ChevronBand, TessellationMark, TailFeatherModal } from '@/componen...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | ... from 'next/dynamic';
+  7 | ...
+  8 | ...piral = dynamic(() => import('@/components/MachineSpiral'), { ssr: false });
+
+The export XCrossMark was not found in module [project]/src/components/Ravenform.tsx [app-client] (ecmascript).
+Did you mean to import XCrossLattice?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Client Component Browser:
+    ./src/components/sections/HomeSection.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component] 
+    at console.f [as error] (<anonymous>:3:17027) (<anonymous>:3:17027)
+[browser] ./src/components/sections/HomeSection.tsx:5:1
+Error: Export ChevronBand doesn't exist in target module
+  3 | ...beyData } from '@/lib/useTobeyData';
+  4 | ...orax from '@/components/CorvusCorax';
+> 5 | ...ndWindow, XCrossMark, ChevronBand, TessellationMark, TailFeatherModal } from '@/componen...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | ... from 'next/dynamic';
+  7 | ...
+  8 | ...piral = dynamic(() => import('@/components/MachineSpiral'), { ssr: false });
+
+The export ChevronBand was not found in module [project]/src/components/Ravenform.tsx [app-client] (ecmascript).
+Did you mean to import ChevronBorder?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Client Component Browser:
+    ./src/components/sections/HomeSection.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component] 
+    at console.f [as error] (<anonymous>:3:17027) (<anonymous>:3:17027)
+[browser] ./src/components/sections/HomeSection.tsx:5:1
+Error: Export DiamondWindow doesn't exist in target module
+  3 | ...beyData } from '@/lib/useTobeyData';
+  4 | ...orax from '@/components/CorvusCorax';
+> 5 | ...ndWindow, XCrossMark, ChevronBand, TessellationMark, TailFeatherModal } from '@/componen...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | ... from 'next/dynamic';
+  7 | ...
+  8 | ...piral = dynamic(() => import('@/components/MachineSpiral'), { ssr: false });
+
+The export DiamondWindow was not found in module [project]/src/components/Ravenform.tsx [app-client] (ecmascript).
+Did you mean to import DiamondLattice?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Client Component Browser:
+    ./src/components/sections/HomeSection.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component] 
+    at console.f [as error] (<anonymous>:3:17027) (<anonymous>:3:17027)
+[browser] ./src/components/sections/HomeSection.tsx:5:1
+Error: Export TailFeatherModal doesn't exist in target module
+  3 | ...beyData } from '@/lib/useTobeyData';
+  4 | ...orax from '@/components/CorvusCorax';
+> 5 | ...ndWindow, XCrossMark, ChevronBand, TessellationMark, TailFeatherModal } from '@/componen...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | ... from 'next/dynamic';
+  7 | ...
+  8 | ...piral = dynamic(() => import('@/components/MachineSpiral'), { ssr: false });
+
+The export TailFeatherModal was not found in module [project]/src/components/Ravenform.tsx [app-client] (ecmascript).
+Did you mean to import TailFeather?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Client Component Browser:
+    ./src/components/sections/HomeSection.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component] 
+    at console.f [as error] (<anonymous>:3:17027) (<anonymous>:3:17027)
+[browser] ./src/components/sections/HomeSection.tsx:5:1
+Error: Export TessellationMark doesn't exist in target module
+  3 | ...beyData } from '@/lib/useTobeyData';
+  4 | ...orax from '@/components/CorvusCorax';
+> 5 | ...ndWindow, XCrossMark, ChevronBand, TessellationMark, TailFeatherModal } from '@/componen...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | ... from 'next/dynamic';
+  7 | ...
+  8 | ...piral = dynamic(() => import('@/components/MachineSpiral'), { ssr: false });
+
+The export TessellationMark was not found in module [project]/src/components/Ravenform.tsx [app-client] (ecmascript).
+Did you mean to import TailFeather?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Client Component Browser:
+    ./src/components/sections/HomeSection.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component] 
+    at console.f [as error] (<anonymous>:3:17027) (<anonymous>:3:17027)
+[browser] ./src/components/sections/HomeSection.tsx:5:1
+Error: Export XCrossMark doesn't exist in target module
+  3 | ...beyData } from '@/lib/useTobeyData';
+  4 | ...orax from '@/components/CorvusCorax';
+> 5 | ...ndWindow, XCrossMark, ChevronBand, TessellationMark, TailFeatherModal } from '@/componen...
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | ... from 'next/dynamic';
+  7 | ...
+  8 | ...piral = dynamic(() => import('@/components/MachineSpiral'), { ssr: false });
+
+The export XCrossMark was not found in module [project]/src/components/Ravenform.tsx [app-client] (ecmascript).
+Did you mean to import XCrossLattice?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import trace:
+  Client Component Browser:
+    ./src/components/sections/HomeSection.tsx [Client Component Browser]
+    ./src/app/page.tsx [Client Component Browser]
+    ./src/app/page.tsx [Server Component] 
+    at console.f [as error] (<anonymous>:3:17027) (<anonymous>:3:17027)
+✓ Compiled in 603ms
+✓ Compiled in 15ms
+✓ Compiled in 93ms
+✓ Compiled in 197ms
+✓ Compiled in 145ms
+✓ Compiled in 85ms
+✓ Compiled in 180ms
+✓ Compiled in 103ms
+✓ Compiled in 99ms
+ GET / 200 in 326ms (next.js: 178ms, application-code: 148ms)
