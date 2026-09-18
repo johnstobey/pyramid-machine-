@@ -52,9 +52,9 @@ export default function HomeSection() {
         </div>
         <div className="absolute inset-0 bg-[var(--bg)]/55" />
 
-        {/* §3.1.1 Diamond Lattice backdrop — 60°/120° strict [ruling C-A] */}
+        {/* §3.1.1 Diamond Lattice backdrop — 60°/120° strict [ruling C-A] (dimmed behind hero raven) */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <DiamondLattice width={480} height={480} opacity={0.12} />
+          <DiamondLattice width={480} height={480} opacity={0.05} />
         </div>
 
         {/* Geometric overlay lines */}
